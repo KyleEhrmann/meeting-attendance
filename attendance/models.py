@@ -11,7 +11,7 @@ class Person(models.Model):
 	date_of_meeting = models.DateField(default=timezone.now)
 	attended = models.BooleanField()
 
-	def save(self):
+	def publish(self):
 		self.save()
 
 	def __str__(self):
